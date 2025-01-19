@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.App-Cover {
+  flex-direction:row;
 }
 
 .App-logo {
@@ -35,4 +43,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: row;
 }
