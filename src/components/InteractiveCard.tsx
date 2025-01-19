@@ -37,22 +37,50 @@ const InteractiveCard = () => {
       className="interactive-card card shadow-sm p-3 mb-5 bg-white rounded"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={style}
+      style={{ ...style, display: "flex", flexDirection: "column", height: "700px" }} // Set a fixed height for the card
     >
       <div className="card-body d-flex flex-column justify-content-between">
-        <img src={ProjectIMG} alt="Project Image" 
-            style={{ width: '150px', height: '150px', alignContent: 'center' }}/>
-
-        <div className="text-center">
-            <h5 className="card-title">Project Name</h5>
-            <p className="card-text">
-                Hi! I'm a passionate <strong>Computer Engineer</strong> with a focus on developing high-performance applications, 
-                building intuitive user interfaces, and solving complex problems with efficient and scalable code.  
-                Currently, I'm working on React Native apps and plugin development for JetBrains IDEs.
-            </p>
+        {/* Image Section */}
+        <div className="text-center flex-shrink-0">
+          <img
+            src={ProjectIMG}
+            alt="Project Image"
+            style={{
+              width: "100%",
+              maxHeight: "250px", // Limit image height
+              objectFit: "contain", // Maintain aspect ratio
+            }}
+          />
         </div>
 
-        <div className="d-flex justify-content-end">
+        {/* Text Section */}
+        <div
+          className="text-center flex-grow-1 overflow-auto mt-3"
+          style={{ maxHeight: "calc(100% - 220px)", overflowY: "auto" }} // Allow text to overflow
+        >
+          <h5 className="card-title">Project Name</h5>
+          <p className="card-text">
+            Hi! I'm a passionate <strong>Computer Engineer</strong> with a focus on
+            developing high-performance applications, building intuitive user
+            interfaces, and solving complex problems with efficient and scalable
+            code. Currently, I'm working on React Native apps and plugin development
+            for JetBrains IDEs.
+          </p>
+        </div>
+
+        {/* Tools Section */}
+        <div
+          className="text-center mt-2"
+          style={{
+            borderTop: "1px solid #ddd", // Optional divider for visual separation
+            paddingTop: "10px",
+          }}
+        >
+          <p className="text-muted"><strong>Tools: </strong>React Native, TypeScript, JetBrains IDEs, etc.</p>
+        </div>
+
+        {/* Button Section */}
+        <div className="d-flex justify-content-end flex-shrink-0 mt-2">
           <a
             href="https://github.com/your-project-url" // Replace with your project link
             target="_blank"
@@ -64,6 +92,7 @@ const InteractiveCard = () => {
         </div>
       </div>
     </div>
+
   );
 };
 

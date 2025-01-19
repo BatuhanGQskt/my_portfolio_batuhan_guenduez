@@ -6,10 +6,6 @@
   width: 100%;
 }
 
-.App-Cover {
-  flex-direction:row;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -48,5 +44,31 @@
 
 .app-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Items arranged left-to-right */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  gap: 40px; /* Optional: Add spacing between items */
+  padding: 20px;
+}
+
+.app-container > * {
+  flex: 1 1 calc(33.33% - 20px); /* Each item takes up one-third of the container's width by default */
+  min-width: 300px; /* Prevent items from shrinking too small */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.profile-card {
+  flex: 1 1 300px; /* Each card takes full width on small screens */
+  max-width: 350px; /* Limits card width */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700; /* Bold for headings */
+}
+
+p {
+  font-weight: 400; /* Regular for body text */
 }

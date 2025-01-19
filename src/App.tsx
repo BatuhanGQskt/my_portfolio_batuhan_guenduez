@@ -12,6 +12,8 @@ import InfoSection from './components/InfoSection';
 import EducationSection from './components/EducationSection'
 import ExperienceSection from './components/ExperienceSection';
 import ProjectSection from './components/ProjectSection';
+import ContactForm from './components/ContactForm';
+import ProfileInfo from './components/ProfileInfo';
 
 import InteractiveCard from './components/InteractiveCard';
 
@@ -20,14 +22,12 @@ function App() {
     <div className="App" style={{backgroundColor: Colors.background}}>
       <NavBar />
       <div>
-        <div className='App-Cover'>
+        <div>
           <InfoSection />
         </div>
         <div className="app-container">
           <ProfileCard />
-          <InteractiveCard />
-
-          <ColorPalette />
+          <ProfileInfo />
         </div>
 
         <div>
@@ -41,6 +41,10 @@ function App() {
 
         <div>
           <ProjectSection />
+        </div>
+
+        <div>
+          <ContactForm />
         </div>
       </div>
     </div>
