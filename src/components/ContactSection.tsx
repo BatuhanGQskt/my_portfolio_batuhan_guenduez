@@ -21,4 +21,4 @@ const ContactSection = () => {
   );
 };
 
-export default SectionWrapper(ContactSection, "Contact Section");
+export default SectionWrapper(ContactSection, "Contact_Section");

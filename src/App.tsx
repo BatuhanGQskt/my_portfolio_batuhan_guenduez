@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App" style={{backgroundColor: Colors.background}}>
       <NavBar />
-      <div>
+      <div className='content'>
         <div>
           <InfoSection />
         </div>

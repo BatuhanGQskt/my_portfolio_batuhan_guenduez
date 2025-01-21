@@ -11,8 +11,8 @@ interface EducationEvent {
 }
 
 const EducationInfo: EducationEvent[] = [
-  { title: 'MSc. Informatics, Technical University of Munich', year: 'April 2023 - Present', description: 'GPA: 2.2/1.0 Courses: ', icon: TUMLogo },
-  { title: 'BSc. Computer Engineering, METU Northern Cyprus Campus', year: 'August 2017 - July 2022', description: 'GPA: 3.3/4.0 ', icon: METULogo },
+  { title: 'MSc. Informatics, Technical University of Munich', year: 'April 2023 - Present | GPA: 2.2/1.0', description: 'Courses: Machine Learning, Advanced Natural Language Processing, Machine Learning in Crowd Modelling & Simulation, Intorduction to Deep Learning, Introduction to Quantum Computing, Legal Data Science and Informatics', icon: TUMLogo },
+  { title: 'BSc. Computer Engineering, METU Northern Cyprus Campus', year: 'August 2017 - July 2022 | GPA: 3.3/4.0 ', description: 'Courses: Data Structures & Algorithms, Programming Language, OOP Programming, Logic Design, Verilog/VHDL Programming, Embedded Systems, Computer Architecture, Introduction to OS, C Programming, Formal Languages and Abstract Machines, Data Management & File Structures I, II, Introduction to Machine Learning, Artificial Intelligence, Image Processing', icon: METULogo },
 ];
 
 export default EducationInfo;
