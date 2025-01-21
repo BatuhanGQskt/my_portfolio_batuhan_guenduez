@@ -10,7 +10,7 @@ const InfoSection = () => {
   const textBackgroundColor = Colors.border;
   const names = [
     "ML Analyst",
-    "Compiler Construction Designer",
+    "Compiler Designer",
     "AI Developer",
     "Software Engineer",
   ];

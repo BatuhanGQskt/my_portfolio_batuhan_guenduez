@@ -12,10 +12,10 @@ import InfoSection from './components/InfoSection';
 import EducationSection from './components/EducationSection'
 import ExperienceSection from './components/ExperienceSection';
 import ProjectSection from './components/ProjectSection';
-import ContactForm from './components/ContactForm';
 import ProfileInfo from './components/ProfileInfo';
 
 import InteractiveCard from './components/InteractiveCard';
+import ContactSection from './components/ContactSection';
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
           <ProfileCard />
           <ProfileInfo />
         </div>
+
 
         <div>
           <EducationSection />
@@ -44,7 +45,7 @@ function App() {
         </div>
 
         <div>
-          <ContactForm />
+          <ContactSection />
         </div>
       </div>
     </div>

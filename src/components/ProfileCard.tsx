@@ -6,10 +6,22 @@ import GithubIcon from '../assests/icons8-github.svg';
 import ProfilePicture from '../assests/1660486674590.jpg';
 
 import Colors from '../constants/colors';
+import SectionWrapper from '../hoc/SectionWrapper';
+import DownloadGIF from '../assests/icons8-download.gif';
+
 
 const ProfileCard = () => {
+
+  const handleCVDownload = () => {
+    // Provide the relative path from the public folder
+    const link = document.createElement('a');
+    link.href = '/CV.pdf';  // This assumes your CV is in the public folder
+    link.download = 'Batuhan_Gunduz_CV.pdf';  // The name you want for the downloaded file
+    link.click();
+  };
+
   return (
-    <div className="profile-card mx-auto my-3">
+    <div className="profile-card mx-auto my-3 p-4">
       <div
         className="card text-center p-4 shadow-sm"
         style={{
@@ -31,7 +43,9 @@ const ProfileCard = () => {
         {/* Name */}
         <h4 style={{ color: Colors.textPrimary }}>Batuhan Gündüz</h4>
         <p style={{ color: Colors.textSecondary }}>
-          Computer Engineer | Plugin Developer | SAD
+          Hi! I'm a passionate <strong>Computer Engineer</strong> with a focus on developing high-performance applications, 
+          building intuitive user interfaces, and solving complex problems with efficient and scalable code.  
+          Currently, I'm working on Compiler Design and LLMs.
         </p>
 
         {/* Social Buttons */}
@@ -69,8 +83,9 @@ const ProfileCard = () => {
               overflow: 'hidden',  // Hides any overflow if the image is larger
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center',}}
-            >
+              justifyContent: 'center',
+            }}
+          >
             <img
               src={GithubIcon}
               alt="Github"
@@ -80,10 +95,18 @@ const ProfileCard = () => {
               }}
             />
           </a>
+
+          {/* CV Download Button */}
+          <button onClick={handleCVDownload} className="btn btn-sm btn-success" style={{backgroundColor: Colors.background, padding: '10px 20px', borderRadius: '10px'}}>
+            <div className='d-flex align-items-center justify-content-center'>
+              <p style={{textAlign: 'center', marginRight: '10px', marginBottom: 0, color: Colors.textPrimary}}>Download CV</p>
+              <img src={DownloadGIF} alt="downloadGif" style={{width: '20px', height: '20px'}} />
+            </div>
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default ProfileCard;
+export default SectionWrapper(ProfileCard, "profile_card");

@@ -44,22 +44,20 @@
 
 .app-container {
   display: flex;
-  flex-direction: row; /* Items arranged left-to-right */
-  flex-wrap: wrap; /* Allow wrapping to the next line */
-  gap: 40px; /* Optional: Add spacing between items */
-  padding: 20px;
+  flex-direction: row; /* Arrange items in a row */
+  justify-content: center; /* Ensure even distribution without wrapping */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
-.app-container > * {
-  flex: 1 1 calc(33.33% - 20px); /* Each item takes up one-third of the container's width by default */
-  min-width: 300px; /* Prevent items from shrinking too small */
-  box-sizing: border-box; /* Include padding in width calculations */
+.profile-card, 
+.profile-info {
+  flex: 1 1 300px; /* Grow and shrink equally, starting at a base width of 300px */
+  max-width: 400px; /* Set a maximum width for each component */
+  min-width: 250px; /* Set a minimum width for responsiveness */
+  box-sizing: border-box; /* Include padding and borders in width/height */
 }
 
-.profile-card {
-  flex: 1 1 300px; /* Each card takes full width on small screens */
-  max-width: 350px; /* Limits card width */
-}
 
 body {
   font-family: 'Montserrat', sans-serif;

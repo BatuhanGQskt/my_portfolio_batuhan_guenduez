@@ -18,8 +18,8 @@ const ColorPalette = () => {
                 border: '2px solid #ddd',
               }}
             />
-            <small className="text-muted">{name}</small>
-            <div className="text-dark">{hex}</div>
+            <small style={{color: 'red'}}>{name}</small>
+            <div style={{color: 'red'}}>{hex}</div>
           </div>
         ))}
       </div>

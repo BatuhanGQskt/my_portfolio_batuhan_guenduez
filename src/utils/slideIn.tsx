@@ -1,6 +1,6 @@
 import { Variants } from "framer-motion";
 
-type Direction = "left" | "right" | "up" | "down";
+type Direction = "left" | "right" | "up" | "down" | "none"; // Include "none" as a valid direction
 type TransitionType = "tween" | "spring" | "keyframes"; // Add more if needed
 
 export const slideIn = (
@@ -11,17 +11,19 @@ export const slideIn = (
 ): Variants => {
   return {
     hidden: {
-      x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-      y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
+      opacity: 0, // Start with element hidden (fade out)
+      x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0, // Slide in from left or right
+      y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0, // Slide in from top or bottom
     },
     show: {
-      x: 0,
-      y: 0,
+      opacity: 1, // Fade in the element
+      x: direction === "none" ? 0 : 0, // No slide if "none", otherwise move to the original position
+      y: direction === "none" ? 0 : 0, // No slide if "none", otherwise move to the original position
       transition: {
         type: type,
         delay: delay,
         duration: duration,
-        ease: "easeOut",
+        ease: "easeOut", // Smooth transition
       },
     },
   };
