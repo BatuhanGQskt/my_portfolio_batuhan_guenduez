@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my_portfolio_batuhan_guenduez/static/css/main.bf3e062e.css",
-    "main.js": "/my_portfolio_batuhan_guenduez/static/js/main.fbcb371e.js",
+    "main.css": "/my_portfolio_batuhan_guenduez/static/css/main.4503199f.css",
+    "main.js": "/my_portfolio_batuhan_guenduez/static/js/main.ae0e0efe.js",
     "static/js/453.b21437c2.chunk.js": "/my_portfolio_batuhan_guenduez/static/js/453.b21437c2.chunk.js",
     "static/media/project_img_holder.png": "/my_portfolio_batuhan_guenduez/static/media/project_img_holder.c050254e224c1d2e33a0.png",
     "static/media/1660486674590.jpg": "/my_portfolio_batuhan_guenduez/static/media/1660486674590.e31a7156fa6af5e69558.jpg",
@@ -13,12 +13,12 @@
     "static/media/Logo_of_the_Technical_University_of_Munich.svg": "/my_portfolio_batuhan_guenduez/static/media/Logo_of_the_Technical_University_of_Munich.02bcd8a1efceaf8a4888d74e6685664e.svg",
     "static/media/icons8-linkedin.svg": "/my_portfolio_batuhan_guenduez/static/media/icons8-linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
     "static/media/METU_logo.svg": "/my_portfolio_batuhan_guenduez/static/media/METU_logo.bfcc1750353b111bb2eb42d48e18e069.svg",
-    "main.bf3e062e.css.map": "/my_portfolio_batuhan_guenduez/static/css/main.bf3e062e.css.map",
-    "main.fbcb371e.js.map": "/my_portfolio_batuhan_guenduez/static/js/main.fbcb371e.js.map",
+    "main.4503199f.css.map": "/my_portfolio_batuhan_guenduez/static/css/main.4503199f.css.map",
+    "main.ae0e0efe.js.map": "/my_portfolio_batuhan_guenduez/static/js/main.ae0e0efe.js.map",
     "453.b21437c2.chunk.js.map": "/my_portfolio_batuhan_guenduez/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf3e062e.css",
-    "static/js/main.fbcb371e.js"
+    "static/css/main.4503199f.css",
+    "static/js/main.ae0e0efe.js"
   ]
 }
