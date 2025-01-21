@@ -19,7 +19,19 @@ const ContactForm = () => {
                  fontFamily: 'system-ui'
             }}>
             <div className="header">
-                <h1 style={{ textAlign: 'left', color: 'white', fontSize: '74px', paddingRight: '60px', paddingTop: '60px', paddingBottom: '60px', fontWeight: 'bold' }}>
+                <h1 
+                    style={{
+                        textAlign: 'left', 
+                        fontSize: '74px', 
+                        paddingRight: '60px', 
+                        paddingTop: '60px', 
+                        paddingBottom: '60px', 
+                        fontWeight: 'bold', 
+                        background: `linear-gradient(to right, ${Colors.primary}, yellow)`, 
+                        WebkitBackgroundClip: 'text',  // Required for gradient text effect
+                        color: 'transparent'  // Make the text color transparent to reveal the gradient
+                    }}
+                >
                     Contact.
                 </h1>
             </div>
@@ -28,7 +40,7 @@ const ContactForm = () => {
                     <div className="input-group" style={{ flex: 1 }}>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginBottom: '5px' }}>
                             <img 
-                                src={UserLogo} 
+                                src="https://img.icons8.com/stamp/32/FA5252/user.png"
                                 alt="user logo" 
                                 style={{ 
                                 width: '24px', 
@@ -65,7 +77,7 @@ const ContactForm = () => {
                     <div className="input-group" style={{ flex: 1 }}>
                         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginBottom: '5px' }}>
                             <img 
-                                src={EmailLogo} 
+                                src="https://img.icons8.com/ios-filled/50/FD7E14/apple-mail.png"
                                 alt="email logo" 
                                 style={{ 
                                 width: '24px', 
@@ -101,7 +113,11 @@ const ContactForm = () => {
                 </div>
                 <div className="input-group" style={{ width: '100%', maxWidth: '600px' }}>
                     <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginBottom: '5px' }}>
-                        <img width="24" height="24" src="https://img.icons8.com/fluency/48/speech-bubble-with-dots--v2.png" alt="speech-bubble-with-dots--v2"/>
+                        <img style={{ 
+                                width: '24px', 
+                                height: '24px', 
+                                marginRight: '10px' 
+                                }}   src="https://img.icons8.com/ios-filled/50/FAB005/chat-message--v1.png" alt="message"/>
                         <h6 style={{ 
                             color: 'white', 
                             fontSize: '24px',

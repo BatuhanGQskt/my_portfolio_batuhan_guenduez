@@ -90,9 +90,6 @@ const ExperienceSection = () => {
                       </ul>
                     ))}
                 </div>
-                <p>
-                  <strong>Technologies:</strong>
-                </p>
               </div>
             </div>
           </div>
