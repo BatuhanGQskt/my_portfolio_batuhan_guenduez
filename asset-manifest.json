@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/my_portfolio_batuhan_guenduez/static/css/main.4503199f.css",
-    "main.js": "/my_portfolio_batuhan_guenduez/static/js/main.ae0e0efe.js",
+    "main.js": "/my_portfolio_batuhan_guenduez/static/js/main.29fdced0.js",
     "static/js/453.b21437c2.chunk.js": "/my_portfolio_batuhan_guenduez/static/js/453.b21437c2.chunk.js",
     "static/media/project_img_holder.png": "/my_portfolio_batuhan_guenduez/static/media/project_img_holder.c050254e224c1d2e33a0.png",
     "static/media/1660486674590.jpg": "/my_portfolio_batuhan_guenduez/static/media/1660486674590.e31a7156fa6af5e69558.jpg",
     "static/media/legalian.png": "/my_portfolio_batuhan_guenduez/static/media/legalian.f70ba1a47ec5f03f5d17.png",
     "static/media/qml_paper.png": "/my_portfolio_batuhan_guenduez/static/media/qml_paper.a35837dcc6c978dd4fe0.png",
     "static/media/hackatum_optimizer.png": "/my_portfolio_batuhan_guenduez/static/media/hackatum_optimizer.139082523a3fe62a1f08.png",
+    "static/media/BG_logo.svg": "/my_portfolio_batuhan_guenduez/static/media/BG_logo.21c3b136455161ea86057c906dd22b79.svg",
     "static/media/icons8-github.svg": "/my_portfolio_batuhan_guenduez/static/media/icons8-github.dc49a960a2d3c5a49c806f6188a7733b.svg",
     "index.html": "/my_portfolio_batuhan_guenduez/index.html",
     "static/media/Logo_of_the_Technical_University_of_Munich.svg": "/my_portfolio_batuhan_guenduez/static/media/Logo_of_the_Technical_University_of_Munich.02bcd8a1efceaf8a4888d74e6685664e.svg",
     "static/media/icons8-linkedin.svg": "/my_portfolio_batuhan_guenduez/static/media/icons8-linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
     "static/media/METU_logo.svg": "/my_portfolio_batuhan_guenduez/static/media/METU_logo.bfcc1750353b111bb2eb42d48e18e069.svg",
     "main.4503199f.css.map": "/my_portfolio_batuhan_guenduez/static/css/main.4503199f.css.map",
-    "main.ae0e0efe.js.map": "/my_portfolio_batuhan_guenduez/static/js/main.ae0e0efe.js.map",
+    "main.29fdced0.js.map": "/my_portfolio_batuhan_guenduez/static/js/main.29fdced0.js.map",
     "453.b21437c2.chunk.js.map": "/my_portfolio_batuhan_guenduez/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4503199f.css",
-    "static/js/main.ae0e0efe.js"
+    "static/js/main.29fdced0.js"
   ]
 }
