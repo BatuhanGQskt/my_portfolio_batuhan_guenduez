@@ -13,7 +13,7 @@ function NavBar() {
         <Navbar.Toggle id="toggle-navbar" aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="ms-auto" >
-            <Nav.Link href="/#">Info</Nav.Link>
+            <Nav.Link href="#info_section">Info</Nav.Link>
             <Nav.Link href="#Education_Section">Education</Nav.Link>
             <Nav.Link href="#Experience_Section">Experience</Nav.Link>
             <Nav.Link href="#Project_Section">Projects</Nav.Link>
