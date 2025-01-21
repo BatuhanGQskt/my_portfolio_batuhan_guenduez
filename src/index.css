@@ -32,3 +32,8 @@ html {
 .navbar-brand {
   color: white !important; /* Use !important to override other styles if necessary */
 }
+
+#toggle-navbar {
+  background-color: #852330 !important;
+  color : #872341 !important;
+}

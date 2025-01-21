@@ -5,6 +5,7 @@ import { slideIn } from "../utils/slideIn";
 import Colors from "../constants/colors";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { Typewriter } from "react-simple-typewriter";
+import { height } from "@mui/system";
 
 const InfoSection = () => {
   const textBackgroundColor = Colors.border;
@@ -16,7 +17,7 @@ const InfoSection = () => {
   ];
 
   return (
-    <div>
+    <div >
       {/* SlideIn Left */}
       <div
         className="d-flex justify-content-center align-items-center"
