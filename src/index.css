@@ -38,7 +38,7 @@ html {
   color : #872341 !important;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 636px) {
   #info_section {
     height: 600px;
   }

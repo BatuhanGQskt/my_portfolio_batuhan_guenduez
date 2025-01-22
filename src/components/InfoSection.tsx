@@ -17,10 +17,10 @@ const InfoSection = () => {
   ];
 
   return (
-    <div  id='info_section'>
+    <div  id='info_section' className="d-flex flex-column justify-content-center">
       {/* SlideIn Left */}
       <div
-        className="d-flex justify-content-center align-items-center"
+        className="d-flex justify-content-center align-items-left"
       >
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
